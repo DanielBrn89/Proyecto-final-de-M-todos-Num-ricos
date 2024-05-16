@@ -52,10 +52,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuIntegrantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuIntegrantes.Designer.cs">
+      <DependentUpon>MenuIntegrantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +106,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\azul.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_TAC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icone-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_minimize_icon_138009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window_restore_icon_137011.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

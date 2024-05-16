@@ -31,5 +31,15 @@ namespace Aplicacion_para_metodos_numericos
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

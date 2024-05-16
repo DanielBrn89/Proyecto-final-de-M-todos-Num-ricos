@@ -40,8 +40,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.PanelInicio = new System.Windows.Forms.Panel();
+            this.btnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.PanelInicio.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -61,7 +66,6 @@
             // 
             // TxtContraseña
             // 
-            this.TxtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtContraseña.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtContraseña.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.TxtContraseña.Location = new System.Drawing.Point(347, 210);
@@ -72,7 +76,6 @@
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TxtUsuario.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtUsuario.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.TxtUsuario.Location = new System.Drawing.Point(347, 151);
@@ -106,7 +109,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Aplicacion_para_metodos_numericos.Properties.Resources._20230601_0024;
-            this.pictureBox1.Location = new System.Drawing.Point(666, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(666, 308);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(114, 82);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +120,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gill Sans MT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(211, 9);
+            this.label3.Location = new System.Drawing.Point(256, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(414, 30);
             this.label3.TabIndex = 6;
@@ -183,12 +186,51 @@
             this.label7.TabIndex = 11;
             this.label7.Text = "libres.....";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.pictureBox3.BackgroundImage = global::Aplicacion_para_metodos_numericos.Properties.Resources.Login_TAC;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(0, 29);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(122, 102);
+            this.pictureBox3.TabIndex = 12;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // PanelInicio
+            // 
+            this.PanelInicio.BackColor = System.Drawing.Color.Red;
+            this.PanelInicio.Controls.Add(this.btnSalir);
+            this.PanelInicio.Location = new System.Drawing.Point(0, 0);
+            this.PanelInicio.Name = "PanelInicio";
+            this.PanelInicio.Size = new System.Drawing.Size(780, 23);
+            this.PanelInicio.TabIndex = 13;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackgroundImage = global::Aplicacion_para_metodos_numericos.Properties.Resources.azul;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSalir.Location = new System.Drawing.Point(750, 0);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(27, 23);
+            this.btnSalir.TabIndex = 0;
+            this.btnSalir.Text = "X";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Aplicacion_para_metodos_numericos.Properties.Resources.imagen;
             this.ClientSize = new System.Drawing.Size(781, 398);
+            this.Controls.Add(this.PanelInicio);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -201,11 +243,14 @@
             this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.TxtContraseña);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Metodos Numericos - Pagina Principal";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.PanelInicio.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,6 +270,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel PanelInicio;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
 
